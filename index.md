@@ -4,6 +4,10 @@ The Open Source Malaria project is trying a different approach to curing malaria
 This Landing Page aggregates the most recent activity in Open Source Malaria. Action items are on the [To Do List](https://github.com/OpenSourceMalaria/OSM_To_Do_List/issues?q=is%3Aopen) and experiments from all contributors are recorded in the [Lab Notebooks](https://github.com/OpenSourceMalaria/About-StartHere-FAQ). Most current research is on a very promising set of molecules known as [Series 4](http://openwetware.org/wiki/OpenSourceMalaria:Triazolopyrazine_%28TP%29_Series). If you'd like to get involved, go right ahead, or get in touch with a member of the consortium (click on "Join the Team" below). In open source research all data and ideas are freely shared, anyone may participate as an equal partner and there will be no patents - think "Linux for Malaria Research" [(FAQ)](http://openwetware.org/wiki/OpenSourceMalaria:FAQ).
 
 
+## Resources
+
+[Open source Antibiotics molecules Google Sheet](https://opensourcemalaria.github.io/os-antibiotics-molecules.html)
+
 ## Activity
 
 Github activity here.
