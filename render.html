@@ -1,0 +1,33 @@
+<html>
+
+<script>
+
+function render(data){
+    const item = randomRow(data);
+    const imgUrl = "https://test.covid.postera.ai/synthesize/" + encodeURI(item.gsx$smilesparent.$t);
+    const text = `
+    SMILES: ${item.gsx$smilesparent.$t}</p>
+    InChIKey: ${item.gsx$inchikey.$t}</p>
+    Link: ${item.gsx$wikilink.$t}</p>
+    <img src="${imgUrl}">`;
+    document.querySelector("#molecule").innerHTML = text;
+}
+
+function randomRow(data){
+    const rand = Math.floor(Math.random() * data.feed.entry.length);
+    return data.feed.entry[rand];
+}
+
+fetch('https://spreadsheets.google.com/feeds/list/168-a1_l51Nfbms67eG8zU8p-EhEtEO26FUzRInbu7fY/1/public/full?alt=json')
+  .then(response => response.json())
+  .then(data => render(data));
+
+</script>
+
+<body>
+    <div id="molecule">
+
+    </div>
+</body>
+
+</html>
